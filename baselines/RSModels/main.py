@@ -26,7 +26,7 @@ def set_seed(seed):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    # MF, NGCF, LightGCN, SGL, SimGCL(SIGIR'22), DCCF(SIGIR'23)
+    # MF, NGCF, LightGCN, SGL, SimGCL, DCCF
     parser.add_argument("--model_type", type=str, default="DCCF")
 
     # [Mafengwo, Steam, Weeplaces]
