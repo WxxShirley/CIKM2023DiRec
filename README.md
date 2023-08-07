@@ -28,13 +28,34 @@ If you make advantage of DiRec in your research, please cite the following in yo
 
 ## Contents in This Repo
 
-In `DiRec` folder, we provide the implementation of DiRec model.
+In `DiRec` folder, we provide the implementation of **DiRec model**.
 
 In `data` folder, we provide all three experimental datasets. For more details, you can see that folder's README file.
 
-In `baselines` folder, we also release our implementations of **all baseline** models.
+In `baselines` folder, we also release our implementations of **all baseline** models. We consider three types of baseline models: Group Recommendation (GR) models, Recommender Models (RS), and User-centric Group Discovery (UGD) models. We provide the implementation of all **9** baselines compared by our paper. 
 
-
+```.
+├── DiRec                   (DiRec Implementation)
+│   ├── dataloader.py
+│   ├── datautil.py
+│   ├── main.py
+│   ├── metrics.py
+│   ├── model.py
+│   └── run.sh
+├── README.md
+├── baselines
+│   ├── CFAG                (UGD baseline)
+│   ├── GRModels            (GR baselines, AGREE and ConsRec)
+│   │   ├── AGREE
+│   │   ├── ConsRec
+│   └── RSModels            (RS baselines, including MF-BPR, NFCG, LightGCN, SGL, SimGCL, DCCF)
+├── data
+│   ├── Mafengwo
+│   ├── README.md
+│   ├── Steam
+│   └── Weeplace
+└── figs
+```
 ## Dependencies
 
 
@@ -49,5 +70,7 @@ In `baselines` folder, we also release our implementations of **all baseline** m
 ## Reproducibility
 
 Use `run.sh` in `DiRec`/`baseline` folders  to run the codes and reproduce the published results.
+
+![Performance](./figs/performance.jpg)
 
 
