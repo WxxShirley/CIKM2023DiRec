@@ -12,19 +12,19 @@ class Data(object):
         self.batch_size = batch_size
         self.num_negative = num_negatives
 
-        self.ug_train_dict = datautil.load_file_to_dict_format(f"../data/{dataset_name}/train.txt")
-        self.ug_test_dict = datautil.load_file_to_dict_format(f"../data/{dataset_name}/test.txt")
-        self.ug_val_dict = datautil.load_file_to_dict_format(f"../data/{dataset_name}/val.txt")
+        self.ug_train_dict = datautil.load_file_to_dict_format(f"../../data/{dataset_name}/train.txt")
+        self.ug_test_dict = datautil.load_file_to_dict_format(f"../../data/{dataset_name}/test.txt")
+        self.ug_val_dict = datautil.load_file_to_dict_format(f"../../data/{dataset_name}/val.txt")
 
         self.n_groups, self.n_users, self.n_items = 0, 0, 0
         self.n_train, self.n_test, self.n_val = 0, 0, 0
 
     def prepare_data(self):
-        train_ui_u, train_ui_i = datautil.load_file_to_list_format(f"../data/{self.dataset_name}/groupItemTrain.txt")
-        train_gi_g, train_gi_i = datautil.load_file_to_list_format(f"../data/{self.dataset_name}/userItemTrain.txt")
-        train_ug_u, train_ug_g = datautil.load_file_to_list_format(f"../data/{self.dataset_name}/train.txt")
-        test_ug_u, _ = datautil.load_file_to_list_format(f"../data/{self.dataset_name}/test.txt")
-        val_ug_u, val_ug_g = datautil.load_file_to_list_format(f"../data/{self.dataset_name}/val.txt")
+        train_ui_u, train_ui_i = datautil.load_file_to_list_format(f"../../data/{self.dataset_name}/groupItemTrain.txt")
+        train_gi_g, train_gi_i = datautil.load_file_to_list_format(f"../../data/{self.dataset_name}/userItemTrain.txt")
+        train_ug_u, train_ug_g = datautil.load_file_to_list_format(f"../../data/{self.dataset_name}/train.txt")
+        test_ug_u, _ = datautil.load_file_to_list_format(f"../../data/{self.dataset_name}/test.txt")
+        val_ug_u, val_ug_g = datautil.load_file_to_list_format(f"../../data/{self.dataset_name}/val.txt")
 
         self.n_items = max(max(train_ui_i), max(train_gi_i)) + 1
         self.n_users = max(max(train_ui_u), max(train_ug_u)) + 1

@@ -40,7 +40,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=2048)
     parser.add_argument("--patience", type=int, default=10)
 
-    parser.add_argument("--device", type=str, default="cuda:2")
+    parser.add_argument("--device", type=str, default="cpu")
     parser.add_argument("--topK", type=list, default=[5, 10, 20])
     parser.add_argument("--attn_coef", type=float, default=0.1)
 
