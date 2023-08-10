@@ -4,7 +4,7 @@ This is the official code for CIKM 2023 Long Paper:
 
 **Dual Intents Graph Modeling for User-centric Group Discovery**
 
-Our paper will be released on arXiv soon : )
+Our paper has been released on arXiv now ([Paper Link](https://arxiv.org/abs/2308.05013))！
 
 
 
