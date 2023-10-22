@@ -6,6 +6,8 @@ This is the official code for CIKM 2023 Long Paper:
 
 Our paper has been released on arXiv now ([Paper Link](https://arxiv.org/abs/2308.05013))！
 
+Other Mateirals: [Pre-recorded Video](https://www.bilibili.com/video/BV1H84y1d7Cc)  [Full Paper](https://dl.acm.org/doi/pdf/10.1145/3583780.3614855)
+
 
 
 ![overview](./figs/model.jpg)
